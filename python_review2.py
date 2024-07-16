@@ -1,10 +1,10 @@
-#myDict["hashtag"] = [] 
+
 def create_youtube_videos(title, description): 
 	myDict = {"title": title , "description": description, "likes": 0, "dislikes": 0, "comments": {}, "hashtag": []} 
 
 	return myDict 
 
-#myDict["hashtag"] = ["Fun", "Excitement", "New", "Adventures", "Special"] 
+ 
  
 def like (myDict) : 
 	if "likes" in myDict : 
@@ -17,7 +17,7 @@ def dislike (myDict) :
 		return myDict 
 
 username = input ("Username: " ) 
-comment_text = input("Comment: ")
+comment_text = input("Comment: ") 
 def add_comment (myDict, username, comment_text) : 
 	myDict["comments"][username]= comment_text 
 	return myDict  
@@ -29,7 +29,6 @@ while youtube_dict["likes"] < 495:
 while len(youtube_dict["hashtag"]) < 5 : 
 	youtube_dict["hashtag"].append(input("Hashtag: "))
 
-#myDict["hashtag"] = ["Fun", "Excitement", "New", "Adventures", "Special"] 
 print(youtube_dict) 
 
 
